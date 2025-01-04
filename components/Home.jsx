@@ -10,7 +10,7 @@ const Home = () => {
       CompanyName: "Vianaar Homes Private Limited",
       moreInfos: [" Full Time - Permanent", "6 - 8 Years"],
       location: "New Delhi / India",
-      bgColor: "lime-100"
+      bgColor: "#ecfccb"
     },
     {
         Mode: "In Office job",
@@ -18,7 +18,7 @@ const Home = () => {
         CompanyName: "INTINERI INFOSOL PRIVATE LIMITED",
         moreInfos: [" Full Time - Permanent", "1 - 6 Years"],
         location: "Noida / India",
-        bgColor: "amber-100"
+        bgColor: "#fef3c7"
       },
     {
       Mode: "Remote job",
@@ -26,7 +26,7 @@ const Home = () => {
       CompanyName: "fusionSpan",
       moreInfos: [" Full Time - Permanent", "5 - 7 Years"],
       location: "canada / Canada",
-      bgColor: "green-100"
+      bgColor: "#dcfce7"
     },
     {
         Mode: "In Office job",
@@ -34,7 +34,7 @@ const Home = () => {
         CompanyName: "Katyayani Organics",
         moreInfos: [" Full Time - Permanent", "5 - 10 Years"],
         location: "Bhopal / India",
-        bgColor: "orange-100"
+        bgColor: "#ffedd5"
       },
       {
         Mode: "In Office job",
@@ -42,7 +42,7 @@ const Home = () => {
         CompanyName: "NetAmbit",
         moreInfos: [" Full Time - Permanent", "0 - 4 Years"],
         location: "Bengaluru / Bangalore / India",
-        bgColor: "purple-100"
+        bgColor: "#f3e8ff"
       },
       {
         Mode: "In Office job",
@@ -50,7 +50,7 @@ const Home = () => {
         CompanyName: "PlanetSpark",
         moreInfos: [" Full Time - Permanent", "2 - 4 Years"],
         location: "Faridabad | Gurgaon / Gurugram / India",
-        bgColor: "sky-100"
+        bgColor: "#e0f2fe"
       },
       {
         Mode: "In Office job",
@@ -58,7 +58,7 @@ const Home = () => {
         CompanyName: "Marvell Technology",
         moreInfos: [" Full Time - Permanent", "3 - 5 Years"],
         location: "Bucharest / Romania",
-        bgColor: "gray-300"
+        bgColor: "#d1d5db"
       },
       {
         Mode: "In Office job",
@@ -66,7 +66,7 @@ const Home = () => {
         CompanyName: "LifeMagic Groupy",
         moreInfos: [" Full Time - Permanent", "0 - 3 Years"],
         location: "Hyderabad - Secunderabad / India",
-        bgColor: "blue-100"
+        bgColor: "#dbeafe"
       },
       {
         Mode: "In Office job",
@@ -74,7 +74,7 @@ const Home = () => {
         CompanyName: "SIB Infotech",
         moreInfos: [" Full Time - Permanent", "3 - 6 Years"],
         location: "New Delhi / India",
-        bgColor: "pink-100"
+        bgColor: "#fce7f3"
       },
   ];
 const quickSearch = [{Title:"#Fresher", Link:"https://www.jobringer.com/jobs-for-fresher"},{Title:"#WorkFromHome", Link:"https://www.jobringer.com/jobs-for-WFH"},{Title:"#WFH", Link:"https://www.jobringer.com/jobs-for-WFH"},{Title:"#IT", Link:"https://www.jobringer.com/jobs-in-information-technology"},{Title:"#HR", Link:"https://www.jobringer.com/jobs-in-human-resource"},{Title:"#BackOffice", Link:"https://www.jobringer.com/jobs-for-back-office"},{Title:"#BPOJob", Link:"https://www.jobringer.com/jobs-for-BPO"},{Title:"#ITES", Link:"https://www.jobringer.com/jobs-in-ITES"},{Title:"#Finance", Link:"https://www.jobringer.com/jobs-in-finance"},{Title:"#Accounts", Link:"https://www.jobringer.com/jobs-in-accounts"},{Title:"#Medical", Link:"https://www.jobringer.com/jobs-in-medical"},{Title:"#Pharma", Link:"https://www.jobringer.com/jobs-in-pharma"},{Title:"#Manager", Link:"https://www.jobringer.com/jobs-for-manager"},{Title:"#Developer", Link:"https://www.jobringer.com/jobs-for-developer"},{Title:"#Marketing", Link:"https://www.jobringer.com/jobs-for-Marketing"},{Title:"#Engineering", Link:"https://www.jobringer.com/jobs-in-Engineering"},{Title:"#Non-GovernmentJobs", Link:"https://www.jobringer.com/jobs"}]
@@ -132,7 +132,8 @@ const [currentIndex, setCurrentIndex] = useState(0);
               className="border-2 border-zinc-300 rounded-2xl bg-gray-100 h-full p-4 text-sm"
             >
               <div
-                className={`bg-${job.bgColor} h-fit rounded-xl p-4 flex flex-col gap-2`}
+                className={`h-fit rounded-xl p-4 flex flex-col gap-2`}
+                style={{ backgroundColor: job.bgColor }}
               >
                 <span className="w-fit bg-white rounded-3xl font-medium p-2">
                   {job.Mode}
